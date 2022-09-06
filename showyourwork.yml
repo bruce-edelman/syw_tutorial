@@ -1,6 +1,9 @@
 version: 0.3.0
 
 dependencies:
+  src/scripts/plot_random_numbers.py:
+    - src/scripts/plot_random_numbers.py
+    - src/data/random_numbers.dat
   src/scripts/plot_powerlawspline.py:
     - src/data/spline_20n_mass_m_iid_mag_iid_tilt_powerlaw_redshift_mass_data.h5
 
