@@ -9,7 +9,7 @@
 \title{An open source scientific article}
 
 % Author list
-\author{@bruce-edelman}
+\author{Bruce Edelman}
 
 % Abstract with filler text
 \begin{abstract}
@@ -51,6 +51,19 @@ Morbi ac orci et nisl hendrerit mollis, suspendisse ut massa, cras nec ante.
 Pellentesque a nulla cum sociis natoque penatibus et magnis dis parturient. 
 Aliquam tincidunt urna, nulla ullamcorper vestibulum turpis. 
 Pellentesque cursus luctus mauris \citep{Luger2021}.
+
+Now let's add a script to generate a plot!
+
+\begin{figure*}[ht!]
+    \script{plot_powerlawspline.py}
+    \begin{centering}
+        \includegraphics[width=\textwidth]{figures/PS_mass_distribution_plot.pdf}
+        \caption{Plot showing the PowerlawSpline inference of the BBH mass distribution from the O3b LVK paper.}
+        \label{fig:mass_distribution}
+    \end{centering}
+\end{figure*}
+
+Perfect we have a figure that will build automatically with changes to source files/etc!
 
 \bibliography{bib}
 
